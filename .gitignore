@@ -76,6 +76,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+src/notebooks
 
 # IPython
 profile_default/
@@ -127,3 +128,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# office files
+vinyl_recommender.pptx
+prev_music_project.xlsx
