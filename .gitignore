@@ -129,6 +129,13 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# office files
+# project files
 vinyl_recommender.pptx
 prev_music_project.xlsx
+proj_ideas.md
+
+# raw data folders
+data/spotify
+data/discogs
+data/listenbrainz
+data/musizbrainz

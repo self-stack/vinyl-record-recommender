@@ -1,7 +1,4 @@
-# whos-genre-is-it-anyway
-
-
-## 1. Recommending Genre
+# Vinyl Record Recommender
 **Description:** A album recommender system. I am an audiophile that invests heavily in my vinyl collection; I don't to own a record if there's only a few good songs on there. I want to enjoy the whole album as an experience. <br>
 **My Approach:** Latent Component Analysis and Collab Filters.<br>
 **Devilerables** (How will people react): Build website on flask for users to recieve Album recommendations. <br>
