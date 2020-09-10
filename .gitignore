@@ -131,8 +131,9 @@ dmypy.json
 
 # project files
 vinyl_recommender.pptx
-prev_music_project.xlsx
+prev_music_projects.xlsx
 proj_ideas.md
+resources/
 
 # raw data folders
 data/spotify
