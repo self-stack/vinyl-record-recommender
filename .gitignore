@@ -139,3 +139,6 @@ data/spotify
 data/discogs
 data/listenbrainz
 data/musizbrainz
+
+# notebooks
+src/notebooks
