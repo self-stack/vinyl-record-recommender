@@ -11,16 +11,4 @@
 ### White Papers
 - [__Collab Filter__](http://yifanhu.net/PUB/cf.pdf)
 - [__Song popularity__](https://arxiv.org/pdf/1908.08609.pdf)
-- [__Song recommender__](https://papers.nips.cc/paper/5004-deep-content-based-music-recommendation.pdf)
-
-## 2. Generate music using NN
-**Description:** Generate music using CNN and/or RNN. <br>
-**My Approach:** LTSM in RNNs<br>
-**Devilerables** (How will people react): Build website on flask that will build and play a new song when site accessed. <br>
-**Data:**<br>
-- [__Spotify API__](http://millionsongdataset.com/)<br>
-- [__Discogs API__](https://www.discogs.com/developers)<br>
-
-
-### Resources
-- [__Automatic Music Generation__](https://www.analyticsvidhya.com/blog/2020/01/how-to-perform-automatic-music-generation/)
+- [__Song recommender__](https://papers.nips.cc/paper/5004-deep-content-based-music-recommendation.pdf):
