@@ -144,3 +144,4 @@ data/musizbrainz
 
 # notebooks
 src/notebooks
+test_nb.ipynb
