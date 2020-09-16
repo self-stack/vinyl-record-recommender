@@ -1,2 +1,3 @@
 pip install spotipy
 pip install lyricsgenius
+pip install textblod
