@@ -135,14 +135,15 @@ prev_music_projects.xlsx
 proj_ideas.md
 resources/
 recommeder.code-workspace
-office_docs
-
-# raw data folders
-data/spotify
-data/discogs
-data/listenbrainz
-data/musizbrainz
+office_docs/
+data/
+src/api_keys.txt
+src/api_keys_human_readable.txt
+*.swp
+*.swo
+**/.DS_Store
 
 # notebooks
 src/notebooks
-test_nb.ipynb
+src/api_test.py
+src/spotipy.py
