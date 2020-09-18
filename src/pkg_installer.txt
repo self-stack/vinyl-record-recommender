@@ -2,3 +2,6 @@ pip install spotipy
 pip install lyricsgenius
 pip install textblod
 pip install essential_generators
+
+sudo apt-get upate -y
+sudo apt-get install -y yum
