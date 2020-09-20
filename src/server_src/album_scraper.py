@@ -202,8 +202,6 @@ def main():
         genre_coll.insert_one(genres_dict)
         feat_coll.insert_one(features_dict)
 
-        ids_sent_to_mongo.append(id_)
-
     client.close()
 
 if __name__ == '__main__':
