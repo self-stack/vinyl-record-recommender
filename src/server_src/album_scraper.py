@@ -110,6 +110,8 @@ def lyrics_builder(song_names, artist, album_id, genius):
     lyrics_dict['album_id'] = album_id
     album_lyrics = ''
     for song in song_names:
+        if song == None:
+            continue
         song_search = genius.search_song(song, artist)
 
         if song_search == None:
