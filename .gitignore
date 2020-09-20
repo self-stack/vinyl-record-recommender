@@ -139,6 +139,7 @@ office_docs/
 data/
 src/api_keys.txt
 src/api_keys_human_readable.txt
+src/server_src/api_keys.txt
 *.swp
 *.swo
 **/.DS_Store
