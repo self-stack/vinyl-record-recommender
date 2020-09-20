@@ -171,7 +171,7 @@ def main():
     # mongo instant
     client = MongoClient('localhost', 27017)
     '''using first df for eda & nlp'''
-    db = client['album_info2']
+    db = client['album_info']
     db['album_id_master']
     db['albums']
     db['lyrics']
