@@ -163,15 +163,15 @@ def main():
     gen = DocumentGenerator()
     q_type='album'
     limit = 50
-    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
-                                                              client_secret=client_secret))
-    genius = lyricsgenius.Genius(client_access_token=client_access_token)
+    # sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
+    #                                                           client_secret=client_secret))
+    # genius = lyricsgenius.Genius(client_access_token=client_access_token)
 
     unique_ids = pickle.load(open('MASTER_ALBUM_IDS.pkl', 'rb'))
     # mongo instant
     client = MongoClient('localhost', 27017)
     '''using first df for eda & nlp'''
-    db = client['album_info']
+    db = client['album_info3']
     db['album_id_master']
     db['albums']
     db['lyrics']
@@ -184,6 +184,9 @@ def main():
     feat_coll = db['feat_df']
 
     for id_ in tqdm(unique_ids):
+        sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
+                                                                  client_secret=client_secret))
+        genius = lyricsgenius.Genius(client_access_token=client_access_token)
         album = sp.album(id_)
         album_dict, tracks, track_ids = album_builder_test(album)
 
