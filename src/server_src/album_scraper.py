@@ -35,7 +35,8 @@ def get_keys():
 
 def get_album_ids_from_query(album_search):
     '''
-    Pluck unique album IDs from API query, iterrates through paginated query, return list of album IDs from query.
+    Pluck unique album IDs from API query, iterrates through paginated query,
+    return list of album IDs from query.
 
     Parameters
     ----------
@@ -112,14 +113,9 @@ def lyrics_builder(song_names, artist, album_id, genius):
     for song in song_names:
         if song == None or artist == None:
             continue
-        song_search = genius.search_song(song, artist)
 
-        if song_search == None:
-            del song_search
-            continue
-        else:
-            album_lyrics += song_search.lyrics;
-            del song_search
+        song_search = genius.search_song(song, artist)
+        album_lyrics += song_search.lyrics;
 
     lyrics_dict['lyrics'] = decode_lyrics(album_lyrics)
 
