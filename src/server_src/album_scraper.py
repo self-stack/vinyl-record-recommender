@@ -115,7 +115,11 @@ def lyrics_builder(song_names, artist, album_id, genius):
             continue
 
         song_search = genius.search_song(song, artist)
-        album_lyrics += song_search.lyrics;
+
+        if song_search != None:
+            album_lyrics += song_search.lyrics;
+        else:
+            continue
 
     lyrics_dict['lyrics'] = decode_lyrics(album_lyrics)
 
