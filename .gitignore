@@ -143,6 +143,7 @@ src/server_src/api_keys.txt
 *.swp
 *.swo
 **/.DS_Store
+src/server_src/
 
 # notebooks
 src/notebooks
