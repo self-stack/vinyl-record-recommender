@@ -146,7 +146,6 @@ src/server_src/api_keys.txt
 src/server_src/
 server_files/
 src/discogs_api.py
-src/recommender_system.ipynb
 
 # notebooks
 src/notebooks
