@@ -2,3 +2,4 @@ pip install spotipy
 pip install lyricsgenius
 pip install textblod
 pip install essential_generators
+pip install pyLDAvis
