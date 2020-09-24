@@ -1,14 +1,20 @@
 # Vinyl Record Recommender
-**Description:** A album recommender system. I am an audiophile that invests heavily in my vinyl collection; I don't to own a record if there's only a few good songs on there. I want to enjoy the whole album as an experience. <br>
-**My Approach:** Latent Component Analysis and Collab Filters.<br>
-**Devilerables** (How will people react): Build website on flask for users to recieve Album recommendations. <br>
-**Data:**<br>
-- [__Spotify API__](http://millionsongdataset.com/)<br>
-- [__Billboards API__](https://rapidapi.com/LDVIN/api/billboard-api/endpoints)<br>
-- [__Discogs API__](https://www.discogs.com/developers)<br>
-- [__MusicBrainz Cover Art Archive API__](https://musicbrainz.org/doc/Cover_Art_Archive/API)<br>
 
-### White Papers
-- [__Collab Filter__](http://yifanhu.net/PUB/cf.pdf)
-- [__Song popularity__](https://arxiv.org/pdf/1908.08609.pdf)
-- [__Song recommender__](https://papers.nips.cc/paper/5004-deep-content-based-music-recommendation.pdf):
+Are you a lover of music? Are you looking for a new(-ish) medium to enjoy the music you love?
+
+## Data sources
+- [__Spotify API__](https://developer.spotify.com/documentation/web-api/)<br>
+- [__Genius__](https://genius.com/developers)<br>
+
+Album metadata was acquired through the Spotify API and lyrics provided by Genius API.
+
+
+## Techstack
+![mytechstach](img/techstack.png)
+Python script to pull album metadata (album features and lyrics) into MongoDB using pymongo python wrapper for MongoDB.
+
+
+### Next steps
+1. Continue to acquire more data. Adjust album scrapper script to load raw API pulls into Mongo
+2. Analyze how audio features transition from track to track. Extract audio analysis from Spotify API to look further into the
+3. Create user profiles to test album recommender. Metrics for user success: CTR on album recommender. Provide 30 second audio samples for each song once the album is clicked by user, count number of track selected by user.
