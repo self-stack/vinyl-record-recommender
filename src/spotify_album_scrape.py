@@ -17,7 +17,7 @@ def get_keys():
     API_KEYS: (list)
         Return API keys used for connected to Spotify and Genius APIs.
     '''
-    f = open('api_keys.txt', 'r')
+    f = open('../data/api_keys.txt', 'r')
     API_KEYS = f.readlines()
 
     for idx, key in enumerate(API_KEYS):
