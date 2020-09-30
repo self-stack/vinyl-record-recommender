@@ -13,6 +13,12 @@ Album metadata was acquired through the Spotify API and lyrics provided by Geniu
 ![mytechstach](img/techstack.png)
 Python script to pull album metadata (album features and lyrics) into MongoDB using pymongo python wrapper for MongoDB.
 
+## Progress Notes
+Sept 30, 2020:
+mongo DBs
+raw_album_info - album script, sp instant outside loop; err - timeout
+raw_album_info2 - albums script, sp instant in loop; testing
+
 
 ### Next steps
 1. Continue to acquire more data. Adjust album scrapper script to load raw API pulls into Mongo
