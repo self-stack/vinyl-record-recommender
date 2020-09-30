@@ -17,7 +17,7 @@ Python script to pull album metadata (album features and lyrics) into MongoDB us
 Sept 30, 2020:
 mongo DBs
 raw_album_info - album script, sp instant outside loop; err - timeout
-raw_album_info2 - albums script, sp instant in loop; testing
+raw_album_info_2 - albums script, sp instant in loop; testing
 
 
 ### Next steps
