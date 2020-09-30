@@ -77,7 +77,7 @@ def main():
     limit = 50
 
     client = MongoClient('localhost', 27017)
-    db = client['raw_album_info']
+    db = client['raw_album_info_2']
     db['album_objects']
     album_coll = db['albums']
 
