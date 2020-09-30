@@ -75,15 +75,15 @@ def main():
     gen = DocumentGenerator()
     q_type='album'
     limit = 50
-    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
-                                                          client_secret=client_secret))
+
+    client = MongoClient('localhost', 27017)
+    db = client['raw_album_info']
+    db['album_objects']
+    album_coll = db['albums']
 
     while True:
-        client = MongoClient('localhost', 27017)
-        db = client['raw_album_info']
-        db['album_objects']
-        album_coll = db['albums']
-
+        sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
+                                                          client_secret=client_secret))
         album_page_query = sp.search(q=get_rand_word(gen),
                                         limit=limit, offset=get_rand_offset(),
                                         type=q_type)
