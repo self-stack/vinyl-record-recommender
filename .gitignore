@@ -151,3 +151,8 @@ src/discogs_api.py
 src/notebooks
 src/api_test.py
 src/spotipy.py
+src/vs.code
+.vscode
+
+# test
+my_*
