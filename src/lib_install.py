@@ -1,8 +1,8 @@
 import sys
 import subprocess
 
-pip3 install spotipy
-pip3 install lyricsgenius
-pip3 install textblod
-pip3 install essential_generators
-pip3 install pyLDAvis
+subprocess.check_call([sys.executable, '-m', 'pip3', 'spotipy'])
+subprocess.check_call([sys.executable, '-m', 'pip3', 'lyricsgenius'])
+#subprocess.check_call([sys.executable, '-m', 'pip3', 'textblod
+subprocess.check_call([sys.executable, '-m', 'pip3', 'essential_generators'])
+#pip3 install pyLDAvis
