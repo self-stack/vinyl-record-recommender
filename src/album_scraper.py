@@ -295,7 +295,7 @@ def main():
     genre_coll = db['genres']
     feat_coll = db['feat_df']
 
-    for id_ in tqdm(unique_ids):
+    for id_ in unique_ids:
         sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
                                                                   client_secret=client_secret))
         genius = lyricsgenius.Genius(client_access_token=client_access_token)
