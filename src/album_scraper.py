@@ -299,7 +299,7 @@ def main():
         sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id,
                                                                   client_secret=client_secret))
         genius = lyricsgenius.Genius(client_access_token=client_access_token)
-        album = sp.album(id_)
+        album = sp.album(id_) # right into MONGO
         album_dict, tracks, track_ids = album_builder_test(album)
 
         artist = album_dict['artist'][0]
